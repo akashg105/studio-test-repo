@@ -1,0 +1,25 @@
+{
+  "name" : "cicd-github-visual-1",
+  "role" : "Admin",
+  "executionProperty" : {
+    "maxConcurrentRuns" : 1
+  },
+  "command" : {
+    "name" : "glueetl",
+    "scriptLocation" : "s3://aws-glue-assets-590186200215-us-west-2/scripts/cicd-visual-4/cicd-non-visual-delete-later.py",
+    "pythonVersion" : "3"
+  },
+  "maxRetries" : 0,
+  "allocatedCapacity" : 10,
+  "timeout" : 2880,
+  "maxCapacity" : 10.0,
+  "glueVersion" : "3.0",
+  "numberOfWorkers" : 10,
+  "workerType" : "G.1X",
+  "sourceControlDetails" : {
+    "provider" : "GITHUB",
+    "repository" : "studio-test-repo",
+    "branch" : "main",
+    "folder" : "cicd-github-visual-1"
+  }
+}
