@@ -7,9 +7,7 @@ from awsglue.job import Job
 
 ## @params: [JOB_NAME]
 args = getResolvedOptions(sys.argv, ['JOB_NAME'])
-#test comment
-#github comment
-#new github comment
+#test fix
 sc = SparkContext()
 glueContext = GlueContext(sc)
 spark = glueContext.spark_session
